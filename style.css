@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(
+        #f881c6b3,
+        #c5f18fb3);
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #5e0778;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #5e0778;
+    display: block;
+    font-weight: 600;
+}
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #2f0f37;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #704c7b;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: darkgrey;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #f881c6b3;
+}
+.coffee {
+    padding: 100px 0;
+    background-color: aliceblue;
+    position: relative;
+}
+.coffee-content {
+    text-align: center;
+}
+.coffee-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #2f0f37;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #5e0778;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.coffee-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+
+.coffee-1 img {
+    width: 200px;
+}
