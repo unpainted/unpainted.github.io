@@ -1,135 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
-{
+*{
+    box-sizing: border-box;
+    font-family: 'Fredoka';
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
 }
-body{
-        font-family: "Fredoka", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-        font-variation-settings:
-          "wdth" 100;
+html{
+    scroll-behavior: smooth;
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header {
-    background-image: linear-gradient(
-        #f881c6b3,
-        #c5f18fb3);
-    background-position: center bottom;
-    background-size: cover;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-}
-
-.menu {
-    position: absolute;
+.containerheader{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    right: 0;
+    z-index: 99;
+}
+.containerheader header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.containerheader header .logo a{
+    font-family: 'Fredoka';
+    font-size: 36px;
+    color: #e471af;
+    text-decoration: none;
+}
+.containerheader header ul{
+    display: flex;
+    list-style: none;
+}
+.containerheader header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.containerheader header nav ul li a:hover{
+    color: #e471af;
+}
+.inicio{
+    background: linear-gradient(to top, rgba(192, 66, 139, 0.653), rgba(152, 253, 169, 0.829)),
+    url(imagenes/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-
-.logo {
-    color: #5e0778;
-    font-size: 25px;
-    font-weight: 800;
-}
-
-.menu .navbar ul li {
-    position: relative;
-    float: left;
-}
-.menu .navbar ul li a {
-    font-size: 18px;
+.inicio .contenido-banner{
     padding: 20px;
-    color: #5e0778;
-    display: block;
-    font-weight: 600;
-}
-#menu {
-    display: none;
-}
-
-.menu-icono {
-    width: 25px;
-}
-.menu label {
-    cursor: pointer;
-    display: none;
-}
-.header-content {
+    background-color: #1e261e;
+    max-width: 350px;
+    margin: auto;
     text-align: center;
+    border-radius: 40px;
 }
-
-.header-content h1 {
-    font-size: 75px;
-    line-height: 80px;
-    color: #2f0f37;
-    text-transform: uppercase;
-    margin-bottom: 35px;
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #e471af;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #e471af;
+}
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Fredoka';
+    text-align: center;
+    padding: 20px 0;
 
 }
-
-.header-content p {
-    font-size: 16px;
-    color: #704c7b;
-    padding: 0 250px;
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: #e471af;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col
+{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Fredoka';
     margin-bottom: 25px;
 }
-
-.btn-1 {
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
     display: inline-block;
-    padding: 11px 35px;
-    background-color: darkgrey;
-    color: aliceblue;
-    text-transform: uppercase;
+    color: ##e471af;
+    width: 130px;
 }
-
-.btn-1:hover {
-    background-color: #f881c6b3;
+.sobremi .fila .col ul li span{
+    background-color: #e471af;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
 }
-.coffee {
-    padding: 100px 0;
-    background-color: aliceblue;
-    position: relative;
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
 }
-.coffee-content {
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #e471af;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.curriculum{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Fredoka';
     text-align: center;
-}
-.coffee-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #2f0f37;
-    text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 15px;
-}
+    padding: 20px 0;
 
-.txt-p {
-    font-size: 16px;
-    color: #5e0778;
-    padding: 0 250px;
-    margin-bottom: 35px;
 }
-
-.coffee-group {
+.curriculum .fila{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
-
 }
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: 'Fredoka';
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: #e471af;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #e471af;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #e471af;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #e471af;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #e471af;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #e471af;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #e471af;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #e471af;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* SECCION PORTFOLIO */
+.portfolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(#e471af, #e39dc5cc);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
 
-.coffee-1 img {
-    width: 200px;
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    
 }

@@ -1,204 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo">Unpainted</a>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="imagenes/bg1.jpg" class="menu-icono">
-            </label>
-            <nav class="navbar">
+    <div class="containerheader">
+        <header>
+            <div class="logo">
+                <a href="#">unpainted</a>
+            </div>
+            <nav id="nav">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Fotografía</a></li>
-                    <li><a href="#">Diseño</a></li>
-                    <li><a href="#">Ilustración</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="header-content container">
-            <h1>Portfolio Violeta Cova</h1>
-            <p>
-                Soy estudiante de Diseño de la Comunicación Gráfica y siempre me ha apasionado lo visual y creativo,
-                pero sin olvidar que también debe ser funcional. En este espacio comparto mis ilustraciones, fotos y
-                trabajos de diseño, mostrando un poco de mi estilo y cómo me gusta contar historias a través de lo que
-                creo.
-            </p>
-            <a href="#" class="btn-1">Información</a>
-        </div>
-
-    </header>
-
-    <section class="Portfolio">
-        <img src="imagenes\bg2.jpg" alt="">
-        <div class="portfolio container">
-            <h2>Introducción</h2>
-            <p class="txt-p">
-                ¡Hola! Soy estudiante de Diseño de la Comunicación Gráfica y este es mi espacio para compartir lo que
-                más me apasiona: crear. Aquí podrás ver una mezcla de ilustraciones, fotografías y trabajos de diseño
-                gráfico que he desarrollado a lo largo de mi formación. Explora cada sección para conocer más sobre mi
-                estilo y cómo busco combinar lo visual y lo funcional en cada proyecto.
-            </p>
-            <div class="coffe-group">
-                <div class="coffe-1">
-                    <img src="imagenes/bg1.jpg" alt="">
-                    <h3>Cafe lorem</h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente perferendis consequatur
-                        porro! Praesentium quasi consequuntur laborum quo, quisquam magnam labore, sed rerum ipsa
-                        aliquam neque molestias fugit, odit totam eos?
-                    </p>
-                </div>
-                <div class="coffe-1">
-                    <img src="imagenes/d2.jpg" alt="">
-                    <h3>Cafe lorem</h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente perferendis consequatur
-                        porro! Praesentium quasi consequuntur laborum quo, quisquam magnam labore, sed rerum ipsa
-                        aliquam neque molestias fugit, odit totam eos?
-                    </p>
-                </div>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <a href="#" class="btn-1">Información</a>
+        </header>
+    </div>
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imagenes/perfil.png" alt="">
+            </div>
+            <h1>Violeta Cova</h1>
+            <h2>Diseñadora de la Comunicación Gráfica
+                estudiante de la Universidad Autónoma Metropolitana Azcapotzalco
+            </h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/vizlac/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/unpaintedesign/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:unpaintedesign@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
     </section>
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Acerca de mí</h2>
+            <p><span>Hola, soy Violeta, también conocida cómo unpainted.</span> A lo largo de mi vida, siempre he
+                encontrado inspiración en lo creativo, ilustrando y observando el mundo con una mirada artística. Esta
+                pasión me ha permitido explorar diversos campos del arte y el diseño, donde no solo busco lo estético,
+                sino también lo funcional y estratégico. El conocimiento que sigo adquiriendo es la base de cada una de
+                mis creaciones, y cada día me esfuerzo por aprender más y mejorar. Estoy aquí para ayudarte en lo que
+                necesites, aportando siempre lo mejor de mí.</p>
 
-    <main class="Violeta Cova">
-
-        <div class="portfolio-content container">
-            <h2>Mis especialidades</h2>
-            <div class="portfolio-main">
-                <div class="main-1">
-                    <img src="imagenes/d3.jpg" alt="">
-                    <h3>Diseño Gráfico</h3>
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24 de Diciembre
+                        </li>
+                        <li>
+                            <strong>Celular</strong>
+                            749 101 7690
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            unpaintedesign@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Universidad Autónoma Metropolitana
+                        </li>
+                        <li>
+                            <strong>Ocupación</strong>
+                            <span>Estudiante</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="main-1">
-                    <img src="imagenes/fo2.jpg" alt="">
-                    <h3>Fotografía</h3>
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Fotografía</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>Diseño</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Dibujo</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-brush"></i>
+                            <span>Arte</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Videojuegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Kpop, Indie</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajes</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-leaf"></i>
+                            <span>Naturaleza</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="main-1"></div>
-                <img src="imagenes/il4.png" alt="">
-                <h3>Ilustración</h3>
             </div>
         </div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore deserunt commodi molestias blanditiis
-            nulla voluptas quibusdam cupiditate eius optio odit quae in fugit quia, eligendi sit, et aspernatur ad
-            rerum!
-        </p>
-        <a href="#" class="btn-1">Información</a>
-        </div>
-    </main>
-    <section class="general">
-        <div class="general-1">
-            <h2>Oficina</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corrupti tenetur reiciendis voluptas
-                dignissimos commodi. Error vel, provident quia voluptatum praesentium, quis voluptatibus culpa, illo
-                accusantium exercitationem quam quas cumque.
-            </p>
-            <a href="#" class="btn-1">Información</a>
-        </div>
-        <div class="general-2"></div>
     </section>
-    <section class="general">
-        <div class="general-3"></div>
-        <div class="general-1">
-            <h2>Oficina</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corrupti tenetur reiciendis voluptas
-                dignissimos commodi. Error vel, provident quia voluptatum praesentium, quis voluptatibus culpa, illo
-                accusantium exercitationem quam quas cumque.
-            </p>
-            <a href="#" class="btn-1">Información</a>
-        </div>
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Diseño de la Comunicación Gráfica</h4>
+                        <span class="casa">Universidad Autónoma Metropolitana</span>
+                        <span class="fecha">2019-2025</span>
+                        <p>Actualmente curso la licenciatura en Diseño de la Comunicación Gráfica en la Universidad
+                            Autónoma Metropolitana. Mi formación me ha permitido desarrollar habilidades en el ámbito
+                            visual y estratégico, combinando creatividad con funcionalidad para transmitir mensajes
+                            efectivos. Este enfoque integral me ha brindado una sólida base para abordar proyectos de
+                            diseño con una visión innovadora y estructurada.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Carrera Técnica en Programación</h4>
+                        <span class="casa">CBTis 154</span>
+                        <span class="fecha">2016-2019</span>
+                        <p>Obtuve el título de Técnico en Programación en el Centro de Bachillerato Tecnológico
+                            Industrial y de Servicios, donde adquirí conocimientos básicos en desarrollo de software,
+                            lógica de programación y manejo de diversas tecnologías. Esta formación técnica me ha
+                            permitido desarrollar un enfoque estructurado y eficiente en la resolución de problemas,
+                            complementando mi capacidad creativa en proyectos de diseño y tecnología.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
 
-    </section>
-    <section class="blog container">
-        <h2>blog</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio harum exercitationem veniam cupiditate
-            voluptatem quae accusantium iure error quibusdam atque, quaerat repudiandae possimus odit. Ullam quasi
-            dignissimos dolore cupiditate ex.
-        </p>
-        <div class="blog-content">
-            <div class="blog-1">
-                <img src="imagenes/d7.jpg" alt="">
-                <h3>Blog 1</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae necessitatibus sed magnam
-                    aspernatur odio laborum delectus architecto numquam minima, sapiente temporibus? Est harum corrupti
-                    molestiae, asperiores modi exercitationem hic.
-                </p>
+                <div class="col derecha">
+                    <h3>Habilidades</h3>
+                    <div class="item der">
+                        <h4>Dibujo tradicional y digital</h4>
+                        <p>A lo largo de mi vida, he desarrollado habilidades tanto en el dibujo tradicional como en el
+                            digital. Desde temprana edad, el dibujo ha sido una forma esencial de expresión creativa
+                            para mí, perfeccionando técnicas como el grafito y los lápices de colores. Con el
+                            tiempo, también me sumergí en el mundo digital, utilizando como herramienta principal la
+                            tableta
+                            gráfica y software de diseño para explorar nuevas formas de creación. Esta combinación de
+                            técnicas tradicionales y digitales me ha permitido adaptarme a diferentes estilos y medios,
+                            siempre buscando mejorar y experimentar con nuevas formas de expresión visual.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Manejo de Software de Diseño</h4>
+                        <p>Tengo un buen manejo de programas de diseño, especialmente Adobe Photoshop e Illustrator, que
+                            uso para crear gráficos e ilustraciones atractivas. También trabajo con Lightroom, InDesign
+                            para diseñar maquetas editoriales y Premiere para editar videos. Mi
+                            versatilidad en estas herramientas me permite abordar diferentes proyectos y colaborar de
+                            manera efectiva, aportando contenido visual que resuena con los objetivos del equipo.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="blog-1"></div>
-            <img src="imagenes/d6.png" alt="">
-            <h3>Blog 2</h3>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae necessitatibus sed magnam
-                aspernatur odio laborum delectus architecto numquam minima, sapiente temporibus? Est harum corrupti
-                molestiae, asperiores modi exercitationem hic.
-            </p>
-        </div>
-        <div class="blog-1"></div>
-        <img src="imagenes/d3.jpg" alt="">
-        <h3>Blog 3</h3>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque vitae necessitatibus sed magnam aspernatur
-            odio laborum delectus architecto numquam minima, sapiente temporibus? Est harum corrupti molestiae,
-            asperiores modi exercitationem hic.
-        </p>
-        </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="footer-content container">
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="imagenes/identidad3.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño de Identidad Corporativa</h3>
+                        <p>Cliente real: SOLMED</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/identidad1.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño de Identidad Corporativa</h3>
+                        <p>Cliente real: Miel y Plantas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/identidad2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño de Identidad Gráfica</h3>
+                        <p>Proyecto personal: Oishi Sushi</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/fo1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Fotografía</h3>
+                        <p>Retrato</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/fo4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Fotografía</h3>
+                        <p>Editorial</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/fo6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Fotografía</h3>
+                        <p>Autorretrato</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/il1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Ilustración</h3>
+                        <p>Acuarela</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/il3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Ilustración</h3>
+                        <p>Gráfito</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/il6.webp" alt="">
+                    <div class="overlay">
+                        <h3>Ilustración</h3>
+                        <p>Digital</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/d1.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Gráfico</h3>
+                        <p>Infografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/il4.png" alt="">
+                    <div class="overlay">
+                        <h3>Ilustración</h3>
+                        <p>Digital</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/fo5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Fotografía</h3>
+                        <p>Editorial</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/vizlac/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/unpaintedesign/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:unpaintedesign@gmail.com"><i class="fas fa-envelope"></i></a>
     </footer>
 </body>
 
